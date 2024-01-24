@@ -9,7 +9,7 @@ const typography={
     },
     h2:{
         fontSize:'35px',
-        fontWeight:'400',
+        fontWeight:'600',
         "@media screen and (max-width:600px)":{
             fontSize:'25px',
         }
@@ -26,7 +26,7 @@ const typography={
     h4:{
         color:'#fff',
         fontSize:'20px',
-        fontWeight:600,
+        fontWeight:'600',
         "@media screen and (max-width:600px)":{
             fontSize:'18px',
         }

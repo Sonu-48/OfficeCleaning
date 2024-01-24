@@ -23,7 +23,7 @@ const theme = createTheme({
               color: "#fff",
               borderRadius: "0.5rem",
               fontWeight: 400,
-              fontSize: "16px",
+              fontSize: "18px",
               padding: "10px 25px",
               textTransform: "capitalize",
               fontFamily:"'Lato', sans-serif",

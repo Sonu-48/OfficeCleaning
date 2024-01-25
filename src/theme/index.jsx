@@ -47,7 +47,10 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          borderRadius: "50px",
+          borderRadius: "5px",
+          color:'#000',
+          background:'rgb(255, 255, 255)',
+          // border:'1px solid #fff',
           // paddingRight:'5px',
           "&$focused": {
             border: "1px solid black",
@@ -151,6 +154,23 @@ const theme = createTheme({
           background:'#f23b3b',
           top:'-5px',
           right:'5px'
+        }
+      }
+    },
+    MuiCheckbox:{
+      styleOverrides:{
+        root:{
+          "&.Mui-checked":{
+           color:' #1496bb',
+          }
+        }
+      }
+    },
+    MuiSelect:{
+      styleOverrides:{
+        root:{
+          color:'#767676',
+          fontSize:'15px',
         }
       }
     }

@@ -16,7 +16,7 @@ const typography={
 
     },
     h3:{
-        fontSize:'26px',
+        fontSize:'24px',
         fontWeight:'600',
         "@media screen and (max-width:600px)":{
             fontSize:'20px',

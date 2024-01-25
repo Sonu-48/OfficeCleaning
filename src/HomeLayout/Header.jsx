@@ -54,9 +54,32 @@ const Wrapper = styled("div")({
     alignItems: "center",
     justifyContent: "center",
     padding: "23px 0px 10px",
+    position:'relative',
+    "& a:hover .sub-menu-header":{
+        display:'block',
+    }
   },
   ".sub-menu-header": {
     display: "none",
+    position:'absolute',
+    zIndex:'99',
+    background:'#2175a9',
+    borderRadius:'5px',
+    width:'230px',
+    marginTop:'5px',
+    "& a":{
+      color:'#fff',
+      textDecoration:'none',
+      borderBottom:'2px solid #fff',
+      width:'100%',
+      transition:'0.2s',
+      "&:hover":{
+        borderColor:'#b4d56c',
+        paddingLeft:'10px',
+        color:'#b4d56c',
+
+      }
+    }
   },
 });
 
@@ -66,7 +89,7 @@ function Header() {
     <Wrapper>
       <Container>
         {/* Header */}
-        <Box pt={3}>
+        <Box pt={1}>
           <Grid container spacing={3}>
             <Grid
               item
@@ -138,7 +161,7 @@ function Header() {
             <NavLink component={ReactRouterLink} to="/">
               Home
             </NavLink>
-            <NavLink component={ReactRouterLink} to="/about">
+            <NavLink component={ReactRouterLink} to="/about-us">
               About Us
             </NavLink>
             <NavLink component={ReactRouterLink} to="/services">

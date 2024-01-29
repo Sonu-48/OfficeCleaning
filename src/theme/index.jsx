@@ -40,7 +40,7 @@ const theme = createTheme({
     MuiContainer: {
       styleOverrides: {
         root: {
-          maxWidth: "1032px!important",
+          maxWidth: "1080px!important",
         },
       },
     },
@@ -171,6 +171,16 @@ const theme = createTheme({
         root:{
           color:'#767676',
           fontSize:'15px',
+        }
+      }
+    },
+    MuiRadio:{
+      styleOverrides:{
+        root:{
+        padding:'5px',
+          "&.Mui-checked":{
+            color:'#2175a9',
+          }
         }
       }
     }

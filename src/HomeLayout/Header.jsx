@@ -26,12 +26,7 @@ const Wrapper = styled("div")({
     marginLeft: "19px",
     padding: "7px 0px",
   },
-  "& a.active": {
-    borderBottom: "2px solid #b4d56c",
-  },
-  "& a:hover": {
-    borderBottom: "2px solid #b4d56c",
-  },
+ 
   "& h5": {
     color: "#2175a9",
   },
@@ -57,7 +52,13 @@ const Wrapper = styled("div")({
     position:'relative',
     "& a:hover .sub-menu-header":{
         display:'block',
-    }
+    },
+    "& a.active": {
+      borderBottom: "2px solid #b4d56c",
+    },
+    "& a:hover": {
+      borderBottom: "2px solid #b4d56c",
+    },
   },
   ".sub-menu-header": {
     display: "none",
@@ -97,7 +98,7 @@ function Header() {
               md={4}
               sm={6}
               xs={12}
-              sx={{ paddingLeft: "0px", display: "flex", alignItems: "center",justifyContent:{lg:'satart',md:'start',sm:'center',xs:'center'} }}
+              sx={{ paddingLeft: "0px", display: "flex", alignItems: "center",justifyContent:{lg:'start',md:'start',sm:'center',xs:'center'} }}
             >
               <Link to="/" component={ReactRouterLink}>
                 <img src="/images/logo.png" alt="Office Cleaning" />
@@ -111,7 +112,7 @@ function Header() {
               xs={12}
               sx={{ paddingLeft: "0px", display: "flex", alignItems: "center",justifyContent:'center' }}
             >
-              <Box>
+              <Box align="center">
                 <Typography variant="h5">
                   Instant <span>Estimate</span> Instant{" "}
                   <span>Turnaround. </span>
@@ -133,7 +134,7 @@ function Header() {
               }}
             >
               <Box className="social-link-box">
-                <Link href="tel:0203 815 7968 ">0203 815 7968 </Link>
+                <Link href="tel:0203 815 7968 " style={{fontWeight:'500',fontSize:'20px'}}>0203 815 7968 </Link>
                 <Box className="separator">/</Box>
                 <Box className="social-inner-box">
                   <Link href="" target="_blank">
@@ -155,7 +156,7 @@ function Header() {
           sx={{ display: { lg: "block", md: "none", sx: "noe", xs: "none" } }}
         >
           <Box className="sub-header-outer">
-            <NavLink component={ReactRouterLink} to="/from">
+            <NavLink component={ReactRouterLink} to="/get-your-quote-now">
               Free Quote Form
             </NavLink>
             <NavLink component={ReactRouterLink} to="/">
@@ -164,7 +165,7 @@ function Header() {
             <NavLink component={ReactRouterLink} to="/about-us">
               About Us
             </NavLink>
-            <NavLink component={ReactRouterLink} to="/services">
+            <NavLink component={ReactRouterLink} to="/cleaning-service">
               Cleaning Services
               <Box className="sub-menu-header">
                 <List>
@@ -200,13 +201,13 @@ function Header() {
             <NavLink component={ReactRouterLink} to="/blog">
               Blog
             </NavLink>
-            <NavLink component={ReactRouterLink} to="/faq">
+            <NavLink component={ReactRouterLink} to="/faqs">
               FAQs
             </NavLink>
-            <NavLink component={ReactRouterLink} to="/contact">
+            <NavLink component={ReactRouterLink} to="/contact-us">
               Contact Us
             </NavLink>
-            <NavLink component={ReactRouterLink} to="/work">
+            <NavLink component={ReactRouterLink} to="/how-it-works">
               How does it work
             </NavLink>
             <NavLink component={ReactRouterLink} to="/why-us">

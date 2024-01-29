@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const AboutSection = styled("div")({
   ".sidebox": {
     background: "#2175a9",
-    padding: "1.5rem",
+    padding: "2.5rem 1.5rem",
     borderRadius: "0.75rem",
     border: "1px solid #1a296a",
     marginBottom: "1.5rem",
@@ -57,7 +57,7 @@ function About_Us() {
           <Box>
             <img src="/images/about-us-banner.jpg" alt="Banner" width="100%"/>
           </Box>
-          <Grid container spacing={3} mt={1} mb={1}>
+          <Grid container spacing={4} mt={2} mb={1}>
             <Grid item lg={4} md={4} sm={6} xs={12}>
               <Box className="sidebox">
                 <Typography variant="body1" align="center">
@@ -125,7 +125,7 @@ function About_Us() {
                 <img src="/images/quality-assurance.png" alt="Quality" />
               </Box>
               <Box className="sidebox">
-                <Typography variant="body1" align="center">
+                <Typography variant="body1" align="center" sx={{fontSize:'20px'}}>
                   It’s FREE to use our service so you can relax as we do the
                   hard work. Bringing you the best search matches from our
                   database of vetted cleaners.

@@ -11,6 +11,21 @@ a{
 a:hover{
   text-decoration: none;
 }
+.lsit-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.circle-box {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+}
+.data-picker .css-12qs7hp-MuiInputBase-input-MuiOutlinedInput-input{
+  padding:8.5px 14px!important;
+}
 @keyframes sub-menu {
   0%{
       width:0%;

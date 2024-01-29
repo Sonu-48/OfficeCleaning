@@ -9,7 +9,7 @@ const Wrapper= styled('div')({
         "&::before":{
             position:'absolute',
             content:"''",
-            left:'-20px',
+            left:'0px',
             top:'13px',
             background:"url('/images/image-links-title.png')",
             zIndex:'-1',

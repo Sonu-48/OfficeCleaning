@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ServiceWrapper = styled("div")({
   ".service-image-box": {
@@ -52,6 +52,7 @@ const ServiceWrapper = styled("div")({
 });
 
 function Cleaning_Services() {
+  const navigate=useNavigate();
   return (
     <>
       <Header />
@@ -126,7 +127,7 @@ function Cleaning_Services() {
                 </Grid>
               </Grid>
               <Box align="center" className="quote-request-btn">
-                <Button variant="contained" color="primary">
+                <Button variant="contained" color="primary" onClick={()=>navigate('/get-your-quote-now')}>
                   Quote Request Form
                 </Button>
               </Box>

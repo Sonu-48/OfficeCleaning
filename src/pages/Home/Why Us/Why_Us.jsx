@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
+import { useNavigate } from "react-router-dom";
 
 const WhyUsSection = styled("div")({
   ".mobile-banner": {
@@ -98,6 +99,7 @@ const WhyUsSection = styled("div")({
 });
 
 function Why_Us() {
+  const navigate=useNavigate();
   return (
     <>
       <Header />
@@ -244,7 +246,7 @@ function Why_Us() {
               maintained.
             </Typography>
             <Box pt={2} pb={2} align="center">
-                <Button variant="contained" color="primary">Quote Request Form</Button>
+                <Button variant="contained" color="primary" onClick={()=>navigate('/get-your-quote-now')}>Quote Request Form</Button>
             </Box>
           </Box>
         </Container>

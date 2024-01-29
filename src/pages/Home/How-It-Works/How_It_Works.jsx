@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Box, Typography, Button, styled } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Wrapper= styled('div')({
     ".simple-steps":{
@@ -18,6 +19,7 @@ const Wrapper= styled('div')({
 })
 
 function How_It_Works() {
+  const navigate= useNavigate();
   return (
     <>
       <Header />
@@ -63,7 +65,7 @@ function How_It_Works() {
               of all your cleaning requirements.
             </Typography>
             <Box align="center" pt={3}>
-                <Button variant="contained" color="primary">Quote Request Form</Button>
+                <Button variant="contained" color="primary" onClick={()=>navigate('/get-your-quote-now')}>Quote Request Form</Button>
             </Box>
           </Box>
         </Container>

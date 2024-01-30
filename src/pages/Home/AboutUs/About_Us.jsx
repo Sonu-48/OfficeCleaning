@@ -173,7 +173,7 @@ function About_Us() {
                 <Typography variant="body1">
                   We came together with a view to eliminate the frustration
                   surrounding procuring &nbsp;{" "}
-                  <Link to="">London cleaning services for business.</Link>
+                  <Link to="/cleaning-service">London cleaning services for business.</Link>
                   We have experienced first-hand the extra work it creates
                   seeking out a reputable company, checking references and
                   supervising the work so it is up to scratch. <br /><br />
@@ -194,9 +194,9 @@ function About_Us() {
                   location.
                   <br /><br />
                   To see the process of verification or to find out more please
-                  &nbsp;<Link to=""> visit our FAQs.</Link>
+                  &nbsp;<Link to="/faqs"> visit our FAQs.</Link>
                   <br /><br />
-                  You can also &nbsp;<Link to="">request a quote</Link>{" "}
+                  You can also &nbsp;<Link to="/get-your-quote-now">request a quote</Link>{" "}
                   &nbsp;now to put us to the test and benefit from our complete
                   customer support.
                   <br /><br />

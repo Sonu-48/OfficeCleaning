@@ -31,10 +31,10 @@ function Our_of_Our() {
         <Grid container spacing={4} mt={1}>
           <Grid item lg={4} md={4} sm={6} xs={12}>
             <Typography variant="body1">
-              We’re ready to find the best out of hours{" "}
-              <span>professional </span>
-              <Link to="/cleaning-service">office cleaning services</Link>{" "}
-              <span> in London</span>
+              We’re ready to find the best out of hours
+              <span> professional </span>
+              <Link to="/cleaning-service">office cleaning services</Link>
+              <span> in London </span>
               for your business, comparing the best by location, availability,
               performance and reputation. You can claim back your time as we
               work hard to bring you the best London cleaning services for your

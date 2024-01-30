@@ -4,8 +4,8 @@ import { Box} from '@mui/material'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomeLayout from './HomeLayout'
 import { ToastContainer} from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-import About_us from './pages/Home/AboutUs/About_Us';
+import 'react-toastify/dist/ReactToastify.css';
+// import About_us from './pages/Home/AboutUs/About_Us';
 import Cleaning_Services from './pages/Home/CleaningServices/Cleaning_Services';
 import FAQs from './pages/Home/Faq/FAQs';
 import Contact_Us from './pages/Home/ContactUs/Contact_Us';
@@ -13,7 +13,7 @@ import How_It_Works from './pages/Home/How-It-Works/How_It_Works';
 import Why_Us from './pages/Home/Why Us/Why_Us';
 import Feedback from './pages/Home/Feedback/Feedback';
 import Blogs from './pages/Home/Blogs/Blogs';
-import Get_Your_Quote from './pages/Home/Get-Your-Quote/Get_Your_Quote';
+// import Get_Your_Quote from './pages/Home/Get-Your-Quote/Get_Your_Quote';
 import Carpet_Cleaning from './pages/Home/Carpet Cleaning/Carpet_Cleaning';
 import One_Off_Cleaning from './pages/Home/One Off Cleaning/One_Off_Cleaning';
 import Commercial_Cleaning from './pages/Home/Commercial Cleaning/Commercial_Cleaning';
@@ -22,6 +22,11 @@ import Office_Cleaning_London from './pages/Home/Office Cleaning London/Office_C
 import Daytime_Cleaning_London from './pages/Home/Daytime Cleaning London/Daytime_Cleaning_London';
 import Evening_Cleaning_London from './pages/Home/Evening Cleaning London/Evening_Cleaning_London';
 import Office_Cleaning_Services from './pages/Home/Office Cleaning Services/Office_Cleaning_Services';
+import { Suspense, lazy } from 'react';
+import ErrorPage from './Components/ErrorPage';
+
+const About_us = lazy(()=>import('./pages/Home/AboutUs/About_Us'));
+const Get_Your_Quote = lazy(()=>import('./pages/Home/Get-Your-Quote/Get_Your_Quote'))
 
 function App() {
 
@@ -29,7 +34,8 @@ function App() {
   return (
     <Box>
       <BrowserRouter>
-        <Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
           <Route exact path='/' element={<HomeLayout/>}/>
           <Route exact path='/about-us' element={<About_us/>}/>
           <Route exact path='/cleaning-service' element={<Cleaning_Services/>}/>
@@ -48,7 +54,10 @@ function App() {
           <Route exact path='/daytime-cleaning-benefits' element={<Daytime_Cleaning_London/>}/>
           <Route exact path='/evening-cleaning-benefits' element={<Evening_Cleaning_London/>}/>
           <Route exact path='/office-cleaning-services' element={<Office_Cleaning_Services/>}/>
+          <Route path='/*' element={<ErrorPage/>}/>
         </Routes>
+      </Suspense>
+       
       </BrowserRouter>
       <ToastContainer/>
     </Box>

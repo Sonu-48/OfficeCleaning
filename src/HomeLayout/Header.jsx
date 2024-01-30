@@ -141,13 +141,13 @@ function Header() {
                 <Link href="tel:0203 815 7968 " style={{fontWeight:'500',fontSize:'20px'}}>0203 815 7968 </Link>
                 <Box className="separator">/</Box>
                 <Box className="social-inner-box">
-                  <Link href="" target="_blank">
+                  <Link href="https://www.facebook.com/outofhour" target="_blank">
                     <img src="/images/facebook-icon.png" alt="Facebook" />
                   </Link>
-                  <Link href="" target="_blank">
+                  <Link href="https://twitter.com/OutofHour" target="_blank">
                     <img src="/images/twitter-icon.png" alt="Twitter" />
                   </Link>
-                  <Link href="" target="_blank">
+                  <Link href="https://www.youtube.com/watch?v=DB0-XEOFdU0" target="_blank">
                     <img src="/images/youtube-icon.png" alt="YouTube" />
                   </Link>
                 </Box>

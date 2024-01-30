@@ -19,7 +19,7 @@ const BannerWrapper = styled("div")({
   backgroundImage: "url('/images/banner-bg.jpg')",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  backgroundPosition:'bottom',
+  backgroundPosition: "bottom",
   padding: "30px 0px",
   textAlign: "center",
   "& input::placeholder": {
@@ -90,8 +90,7 @@ function Bannerpage() {
   const [kitchen, setKitchen] = React.useState(false);
   const [toilet, setToilet] = useState(false);
   const [commercial, setCommercial] = useState(false);
-  const [select,setSelect]= useState('Name')
-
+  const [select, setSelect] = useState("Name");
 
   const hanldeCheck = (e) => {
     setKitchen(e.target.checked);
@@ -160,7 +159,12 @@ function Bannerpage() {
             </Box>
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
-            <Select variant="outlined" fullWidth size="small" defaultValue="Building Type">
+            <Select
+              variant="outlined"
+              fullWidth
+              size="small"
+              defaultValue="Building Type"
+            >
               <MenuItem value="Showrooms">Showrooms</MenuItem>
               <MenuItem value="Building Type">Building Type</MenuItem>
               <MenuItem value="Standard office">Standard office</MenuItem>
@@ -196,27 +200,48 @@ function Bannerpage() {
                   ></FormControlLabel>
                   {kitchen && (
                     <Box>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="Do you require dishes to be cleaned?">
-                        <MenuItem value="Do you require dishes to be cleaned?">
-                          Do you require dishes to be cleaned?
-                        </MenuItem>
-                        <MenuItem value="Yes">Yes</MenuItem>
-                        <MenuItem value="No">No</MenuItem>
-                      </Select>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="Do you have a dishwasher?">
-                        <MenuItem value="Do you have a dishwasher?">
-                          Do you have a dishwasher?
-                        </MenuItem>
-                        <MenuItem value="Yes">Yes</MenuItem>
-                        <MenuItem value="No">No</MenuItem>
-                      </Select>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="Do you have a fridge?">
-                        <MenuItem value="Do you have a fridge?">
-                          Do you have a fridge?
-                        </MenuItem>
-                        <MenuItem value="Yes">Yes</MenuItem>
-                        <MenuItem value="No">No</MenuItem>
-                      </Select>
+                      <Box mt={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="Do you require dishes to be cleaned?"
+                        >
+                          <MenuItem value="Do you require dishes to be cleaned?">
+                            Do you require dishes to be cleaned?
+                          </MenuItem>
+                          <MenuItem value="Yes">Yes</MenuItem>
+                          <MenuItem value="No">No</MenuItem>
+                        </Select>
+                      </Box>
+                      <Box mt={1} mb={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="Do you have a dishwasher?"
+                        >
+                          <MenuItem value="Do you have a dishwasher?">
+                            Do you have a dishwasher?
+                          </MenuItem>
+                          <MenuItem value="Yes">Yes</MenuItem>
+                          <MenuItem value="No">No</MenuItem>
+                        </Select>
+                      </Box>
+                      <Box mb={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="Do you have a fridge?"
+                        >
+                          <MenuItem value="Do you have a fridge?">
+                            Do you have a fridge?
+                          </MenuItem>
+                          <MenuItem value="Yes">Yes</MenuItem>
+                          <MenuItem value="No">No</MenuItem>
+                        </Select>
+                      </Box>
                     </Box>
                   )}
                 </Box>
@@ -230,36 +255,57 @@ function Bannerpage() {
                   />
                   {toilet && (
                     <Box>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="How many toilets?">
-                        <MenuItem value=" How many toilets?">
-                          How many toilets?
-                        </MenuItem>
-                        <MenuItem value="1">1</MenuItem>
-                        <MenuItem value="2">2</MenuItem>
-                        <MenuItem value="3">3</MenuItem>
-                        <MenuItem value="4">4</MenuItem>
-                        <MenuItem value="5">5</MenuItem>
-                      </Select>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="How many toilet sinks?">
-                        <MenuItem value="  How many toilet sinks?">
-                          How many toilet sinks?
-                        </MenuItem>
-                        <MenuItem value="1">1</MenuItem>
-                        <MenuItem value="2">2</MenuItem>
-                        <MenuItem value="3">3</MenuItem>
-                        <MenuItem value="4">4</MenuItem>
-                        <MenuItem value="5">5</MenuItem>
-                      </Select>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="How many toilet stalls?">
-                        <MenuItem value=" How many toilet stalls?">
-                          How many toilet stalls?
-                        </MenuItem>
-                        <MenuItem value="1">1</MenuItem>
-                        <MenuItem value="2">2</MenuItem>
-                        <MenuItem value="3">3</MenuItem>
-                        <MenuItem value="4">4</MenuItem>
-                        <MenuItem value="5">5</MenuItem>
-                      </Select>
+                      <Box mt={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="How many toilets?"
+                        >
+                          <MenuItem value="How many toilets?">
+                            How many toilets?
+                          </MenuItem>
+                          <MenuItem value="1">1</MenuItem>
+                          <MenuItem value="2">2</MenuItem>
+                          <MenuItem value="3">3</MenuItem>
+                          <MenuItem value="4">4</MenuItem>
+                          <MenuItem value="5">5</MenuItem>
+                        </Select>
+                      </Box>
+                      <Box mt={1} mb={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="How many toilet sinks?"
+                        >
+                          <MenuItem value="How many toilet sinks?">
+                            How many toilet sinks?
+                          </MenuItem>
+                          <MenuItem value="1">1</MenuItem>
+                          <MenuItem value="2">2</MenuItem>
+                          <MenuItem value="3">3</MenuItem>
+                          <MenuItem value="4">4</MenuItem>
+                          <MenuItem value="5">5</MenuItem>
+                        </Select>
+                      </Box>
+                      <Box mb={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="How many toilet stalls?"
+                        >
+                          <MenuItem value="How many toilet stalls?">
+                            How many toilet stalls?
+                          </MenuItem>
+                          <MenuItem value="1">1</MenuItem>
+                          <MenuItem value="2">2</MenuItem>
+                          <MenuItem value="3">3</MenuItem>
+                          <MenuItem value="4">4</MenuItem>
+                          <MenuItem value="5">5</MenuItem>
+                        </Select>
+                      </Box>
                     </Box>
                   )}
                 </Box>
@@ -276,26 +322,40 @@ function Bannerpage() {
                   />
                   {commercial && (
                     <Box>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="How many rooms to clean?">
-                        <MenuItem value="How many rooms to clean?">
-                          How many rooms to clean?
-                        </MenuItem>
-                        <MenuItem value="1">1</MenuItem>
-                        <MenuItem value="2">2</MenuItem>
-                        <MenuItem value="3">3</MenuItem>
-                        <MenuItem value="4">4</MenuItem>
-                        <MenuItem value="5">5</MenuItem>
-                      </Select>
-                      <Select variant="outlined" fullWidth size="small" defaultValue="How many floors to clean?">
-                        <MenuItem value=" How many floors to clean?">
-                          How many floors to clean?
-                        </MenuItem>
-                        <MenuItem value="1">1</MenuItem>
-                        <MenuItem value="2">2</MenuItem>
-                        <MenuItem value="3">3</MenuItem>
-                        <MenuItem value="4">4</MenuItem>
-                        <MenuItem value="5">5</MenuItem>
-                      </Select>
+                      <Box mt={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="How many rooms to clean?"
+                        >
+                          <MenuItem value="How many rooms to clean?">
+                            How many rooms to clean?
+                          </MenuItem>
+                          <MenuItem value="1">1</MenuItem>
+                          <MenuItem value="2">2</MenuItem>
+                          <MenuItem value="3">3</MenuItem>
+                          <MenuItem value="4">4</MenuItem>
+                          <MenuItem value="5">5</MenuItem>
+                        </Select>
+                      </Box>
+                      <Box mt={1} mb={1}>
+                        <Select
+                          variant="outlined"
+                          fullWidth
+                          size="small"
+                          defaultValue="How many floors to clean?"
+                        >
+                          <MenuItem value="How many floors to clean?">
+                            How many floors to clean?
+                          </MenuItem>
+                          <MenuItem value="1">1</MenuItem>
+                          <MenuItem value="2">2</MenuItem>
+                          <MenuItem value="3">3</MenuItem>
+                          <MenuItem value="4">4</MenuItem>
+                          <MenuItem value="5">5</MenuItem>
+                        </Select>
+                      </Box>
                     </Box>
                   )}
                 </Box>
@@ -308,6 +368,7 @@ function Bannerpage() {
               type="number"
               size="small"
               fullWidth
+              inputProps={{ min: 1 }}
               placeholder="Numbers of Cleaners"
             />
           </Grid>
@@ -318,10 +379,16 @@ function Bannerpage() {
               size="small"
               fullWidth
               placeholder="Houses per clean"
+              inputProps={{ min: 1 }}
             />
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
-            <Select variant="outlined" fullWidth size="small" defaultValue="Day per week">
+            <Select
+              variant="outlined"
+              fullWidth
+              size="small"
+              defaultValue="Day per week"
+            >
               <MenuItem value="Day per week">Day per week</MenuItem>
               <MenuItem value="1">1</MenuItem>
               <MenuItem value="2">2</MenuItem>
@@ -333,7 +400,12 @@ function Bannerpage() {
             </Select>
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
-            <Select variant="outlined" fullWidth size="small" defaultValue="Cleaning supplies">
+            <Select
+              variant="outlined"
+              fullWidth
+              size="small"
+              defaultValue="Cleaning supplies"
+            >
               <MenuItem value="Cleaning supplies">Cleaning supplies</MenuItem>
               <MenuItem value="Yes">Yes</MenuItem>
               <MenuItem value="No">No</MenuItem>
@@ -359,14 +431,12 @@ function Bannerpage() {
           <Box className="service-inner-box">
             <Box className="dot-box"></Box>
             <Typography variant="body1">
-             
               No obligation instant quote estimate
             </Typography>
           </Box>
           <Box className="service-inner-box">
             <Box className="dot-box"></Box>
             <Typography variant="body1">
-             
               Short term agreements - cancel anytime
             </Typography>
           </Box>

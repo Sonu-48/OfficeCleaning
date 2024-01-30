@@ -125,7 +125,7 @@ function Instant_Estimate() {
           </Grid>
           <Grid item lg={2} xs={12} sx={{paddingLeft:'0px!important'}}>
             <Box className="link-banner">
-              <Link to="">Click Here to Get Your Instant Quote Estimate</Link>
+              <Link to="/get-your-quote-now">Click Here to Get Your Instant Quote Estimate</Link>
             </Box>
           </Grid>
         </Grid>

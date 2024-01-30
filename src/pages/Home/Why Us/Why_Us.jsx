@@ -10,6 +10,7 @@ import {
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import { useNavigate } from "react-router-dom";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const WhyUsSection = styled("div")({
   ".mobile-banner": {
@@ -102,7 +103,8 @@ function Why_Us() {
   const navigate=useNavigate();
   return (
     <>
-      <Header />
+     <PageHelmet title="What makes Our of Hour Cleaning Services diffrent? - Out Of Hour">
+     <Header />
       <WhyUsSection>
         <Container>
           <Box className="mobile-banner">
@@ -252,6 +254,7 @@ function Why_Us() {
         </Container>
       </WhyUsSection>
       <Footer />
+     </PageHelmet>
     </>
   );
 }

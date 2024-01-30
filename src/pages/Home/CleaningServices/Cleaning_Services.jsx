@@ -10,6 +10,7 @@ import {
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import { Link, useNavigate } from "react-router-dom";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const ServiceWrapper = styled("div")({
   ".service-image-box": {
@@ -55,13 +56,14 @@ function Cleaning_Services() {
   const navigate=useNavigate();
   return (
     <>
-      <Header />
+     <PageHelmet title="Professional Cleaning Services in London - Out of Hour">
+     <Header />
       <ServiceWrapper>
         <Container>
           <Box>
             <img
               src="/images/cleaning-services-banner.jpg"
-              alt="Cleaning Services"
+              alt="Cleaning Services" width="100%"
             />
           </Box>
           <Grid container spacing={3} mt={1} pb={2}>
@@ -181,6 +183,7 @@ function Cleaning_Services() {
         </Container>
       </ServiceWrapper>
       <Footer />
+     </PageHelmet>
     </>
   );
 }

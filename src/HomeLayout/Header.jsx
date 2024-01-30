@@ -23,7 +23,6 @@ const Wrapper = styled("div")({
     color: "#2175a9",
     fontSize: "15px",
     fontWeight: "700",
-    marginLeft: "19px",
     padding: "7px 0px",
   },
  
@@ -50,6 +49,11 @@ const Wrapper = styled("div")({
     justifyContent: "center",
     padding: "23px 0px 10px",
     position:'relative',
+    "& a":{
+      borderBottom: "2px solid #fff",
+      textAlign:'center',
+      marginLeft: "19px",
+    },
     "& a:hover .sub-menu-header":{
         display:'block',
     },
@@ -113,8 +117,8 @@ function Header() {
               sx={{ paddingLeft: "0px", display: "flex", alignItems: "center",justifyContent:'center' }}
             >
               <Box align="center">
-                <Typography variant="h5">
-                  Instant <span>Estimate</span> Instant{" "}
+                <Typography variant="h5" sx={{fontSize:'21px'}}>
+                  Instant <span>Estimate</span> Instant &nbsp;
                   <span>Turnaround. </span>
                   Instant <span>Results</span>
                 </Typography>
@@ -170,28 +174,28 @@ function Header() {
               <Box className="sub-menu-header">
                 <List>
                   <ListItem>
-                    <Link to="/carpet">Carpet Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/carpet-cleaning-london">Carpet Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/cleaning">One Off Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/one-off-cleaning-london">One Off Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/office-cleaning">Office Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/office-cleaning-services">Office Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/commercial-cleaning">Commercial Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/commercial-cleaning">Commercial Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/window cleaning">Window Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/window-cleaning">Window Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/office-london">Office Cleaning London</Link>
+                    <Link component={ReactRouterLink} to="/office-cleaning-london">Office Cleaning London</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/benefits">Daytime Cleaning Benefits</Link>
+                    <Link component={ReactRouterLink} to="/daytime-cleaning-benefits">Daytime Cleaning Benefits</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/evening-cleaning">
+                    <Link component={ReactRouterLink} to="/evening-cleaning-benefits">
                       Evening Cleaning Benefits
                     </Link>
                   </ListItem>
@@ -238,46 +242,64 @@ function Header() {
         <Box sx={{display:showmenu? 'block':'none'}} component={Paper}>
           <List className="list">
             <ListItem>
-              <Link to="">Free Quote Form</Link>
+              <Link component={ReactRouterLink} to="/get-your-quote-now">Free Quote Form</Link>
             </ListItem>
             <ListItem>
-              <Link to="">Home</Link>
+              <Link component={ReactRouterLink} to="/">Home</Link>
             </ListItem>
             <ListItem>
-              <Link to="">About Us</Link>
+              <Link component={ReactRouterLink} to="/about-us">About Us</Link>
             </ListItem>
             <ListItem>
-              <Link to=""> Cleaning Services</Link>
+              <Link component={ReactRouterLink} to="/cleaning-service"> Cleaning Services</Link>
               <Box className="sub-menu-header">
                 <List>
                   <ListItem>
-                    <Link to="/carpet">Carpet Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/carpet-cleaning-london">Carpet Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/cleaning">One Off Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/one-off-cleaning-london">One Off Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/office-cleaning">Office Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/office-cleaning-services">Office Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/commercial-cleaning">Commercial Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/commercial-cleaning">Commercial Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/window cleaning">Window Cleaning</Link>
+                    <Link component={ReactRouterLink} to="/window-cleaning">Window Cleaning</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/office-london">Office Cleaning London</Link>
+                    <Link component={ReactRouterLink} to="/office-cleaning-london">Office Cleaning London</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/benefits">Daytime Cleaning Benefits</Link>
+                    <Link component={ReactRouterLink} to="/daytime-cleaning-benefits">Daytime Cleaning Benefits</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="/evening-cleaning">
+                    <Link component={ReactRouterLink} to="/evening-cleaning-benefits">
                       Evening Cleaning Benefits
                     </Link>
                   </ListItem>
                 </List>
               </Box>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/blog">Blog</Link>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/faqs">FAQs</Link>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/contact-us">Contact Us</Link>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/how-it-works">How does it work</Link>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/why-us">Why Us</Link>
+            </ListItem>
+            <ListItem>
+              <Link component={ReactRouterLink} to="/feedback">Feedback</Link>
             </ListItem>
           </List>
         </Box>

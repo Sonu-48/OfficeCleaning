@@ -8,18 +8,21 @@ import Our_of_Our from "../pages/Home/LandingPage/Out_of_Our";
 import How_it_Works from "../pages/Home/LandingPage/How_it_Works";
 import Reasons_to_Choose from "../pages/Home/LandingPage/Reasons_to_Choose";
 import Reviews from "../pages/Home/LandingPage/Reviews";
+import PageHelmet from "../Components/PageHelmet";
 
 const HomeLayout = () => {
   return (
     <Box>
-      <Header />
-      <Bannerpage />
-      <Instant_Estimate />
-      <Our_of_Our/>
-      <How_it_Works/>
-      <Reasons_to_Choose/>
-      <Reviews/>
-      <Footer />
+      <PageHelmet title="Office Cleaning London & Commerical Services-Out Of Hour">
+        <Header />
+        <Bannerpage />
+        <Instant_Estimate />
+        <Our_of_Our />
+        <How_it_Works />
+        <Reasons_to_Choose />
+        <Reviews />
+        <Footer />
+      </PageHelmet>
     </Box>
   );
 };

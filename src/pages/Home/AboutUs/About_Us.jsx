@@ -3,6 +3,7 @@ import { Container, Box, Typography, Grid, styled } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import { Link } from "react-router-dom";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const AboutSection = styled("div")({
   ".sidebox": {
@@ -51,7 +52,8 @@ const AboutSection = styled("div")({
 function About_Us() {
   return (
     <>
-      <Header />
+     <PageHelmet title="About Us - Out Of Hour">
+     <Header />
       <AboutSection>
         <Container>
           <Box>
@@ -208,6 +210,7 @@ function About_Us() {
         </Container>
       </AboutSection>
       <Footer />
+     </PageHelmet>
     </>
   );
 }

@@ -43,7 +43,7 @@ const Wrapper = styled("div")({
     },
   },
   ".form-field": {
-    marginTop: "15px",
+    marginTop: "5px",
   },
   ".radio-box": {
     margin: "0px 0px 20px",

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Box, Typography, styled } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const FQASection= styled('div')({
     padding:'20px 0px 50px',
@@ -20,11 +21,12 @@ const FQASection= styled('div')({
 function FAQs() {
   return (
     <>
-      <Header />
+     <PageHelmet title="FAQs - Out Of Hour">
+     <Header />
       <FQASection>
         <Container>
           <Box>
-            <img src="/images/banner-faq-page.jpg" alt="Faq Banner" />
+            <img src="/images/banner-faq-page.jpg" alt="Faq Banner" width="100%"/>
           </Box>
           <Box className="faq-section">
             <Typography variant="h2">FAQ’s Questions & Answers</Typography>
@@ -140,6 +142,7 @@ function FAQs() {
         </Container>
       </FQASection>
       <Footer />
+     </PageHelmet>
     </>
   );
 }

@@ -359,14 +359,14 @@ function Bannerpage() {
           <Box className="service-inner-box">
             <Box className="dot-box"></Box>
             <Typography variant="body1">
-              {" "}
-              No obligation instant quote estimate{" "}
+             
+              No obligation instant quote estimate
             </Typography>
           </Box>
           <Box className="service-inner-box">
             <Box className="dot-box"></Box>
             <Typography variant="body1">
-              {" "}
+             
               Short term agreements - cancel anytime
             </Typography>
           </Box>

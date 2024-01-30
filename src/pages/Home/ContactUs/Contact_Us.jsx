@@ -14,6 +14,7 @@ import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const ContactWrapper = styled("div")({
   ".contact-address": {
@@ -60,11 +61,12 @@ function Contact_Us() {
   const handleSubmit = () => {};
   return (
     <>
+      <PageHelmet title="Contact Us - Out Of Hour">
       <Header />
       <ContactWrapper>
         <Container>
           <Box>
-            <img src="/images/contact-us-banner.jpg" alt="ContactUs Banner" />
+            <img src="/images/contact-us-banner.jpg" alt="ContactUs Banner" width="100%"/>
           </Box>
           <Grid container spacing={3} pt={3} pb={3}>
             <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -203,6 +205,7 @@ function Contact_Us() {
         </Container>
       </ContactWrapper>
       <Footer />
+      </PageHelmet>
     </>
   );
 }

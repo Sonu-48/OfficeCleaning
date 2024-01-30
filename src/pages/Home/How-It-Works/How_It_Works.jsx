@@ -3,6 +3,7 @@ import { Container, Box, Typography, Button, styled } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import { useNavigate } from "react-router-dom";
+import PageHelmet from "../../../Components/PageHelmet";
 
 const Wrapper= styled('div')({
     ".simple-steps":{
@@ -22,7 +23,8 @@ function How_It_Works() {
   const navigate= useNavigate();
   return (
     <>
-      <Header />
+    <PageHelmet title="How It Works - Out Of Hour">
+    <Header />
       <Wrapper>
         <Container>
           <Box className="simple-steps">
@@ -71,6 +73,7 @@ function How_It_Works() {
         </Container>
       </Wrapper>
       <Footer />
+    </PageHelmet>
     </>
   );
 }

@@ -33,7 +33,7 @@ function Our_of_Our() {
             <Typography variant="body1">
               We’re ready to find the best out of hours{" "}
               <span>professional </span>
-              <Link to="">office cleaning services</Link>{" "}
+              <Link to="/cleaning-service">office cleaning services</Link>{" "}
               <span> in London</span>
               for your business, comparing the best by location, availability,
               performance and reputation. You can claim back your time as we
@@ -54,7 +54,7 @@ function Our_of_Our() {
             <Typography variant="body1">
               For the first month, we’ll even keep track of their hours and
               attendance so you don’t have to <span>! </span>
-              <Link to="">Request a quote </Link>
+              <Link to="/get-your-quote-now">Request a quote </Link>
               for free now and put us to work as you relax and wait for the
               results.
             </Typography>

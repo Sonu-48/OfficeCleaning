@@ -15,6 +15,9 @@ const Wrapper= styled('div')({
             zIndex:'-1',
             width:'100%',
             height:'1px',
+            "@media screen and (max-width:600px)":{
+                display:'none'
+            }
         },
         "& span":{
             fontWeight:'600'

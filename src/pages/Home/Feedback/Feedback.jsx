@@ -28,7 +28,7 @@ function Feedback() {
       <FeedbackWrapper>
         <Container>
           <Box pt={1}>
-            <img src="/images/feedback-banner.jpg" alt="Feedback Banner" width="100%"/>
+            <img src="/images/feedback-banner.jpg" alt="Feedback Banner" width="100%" loading="lazy"/>
           </Box>
           {/* Provide Feedback section */}
           <Typography variant="h2">Provide Feedback</Typography>

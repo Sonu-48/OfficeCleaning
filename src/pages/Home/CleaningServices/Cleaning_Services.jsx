@@ -63,7 +63,7 @@ function Cleaning_Services() {
           <Box>
             <img
               src="/images/cleaning-services-banner.jpg"
-              alt="Cleaning Services" width="100%"
+              alt="Cleaning Services" width="100%" loading="lazy"
             />
           </Box>
           <Grid container spacing={3} mt={1} pb={2}>
@@ -73,7 +73,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-evening-and-night-cleaning.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="lazy"
                     />
                     <Typography variant="body1">
                       Evening & Night Cleaning
@@ -84,7 +84,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-early-morning-cleaning.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="lazy"
                     />
                     <Typography variant="body1">
                       Early Morning Cleaning
@@ -95,7 +95,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-weekend-cleaning.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="lazy"
                     />
                     <Typography variant="body1">Weekend Cleaning</Typography>
                   </Box>
@@ -104,7 +104,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-commercial-cleaning.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="=lazy"
                     />
                     <Typography variant="body1">Commercial Cleaning</Typography>
                   </Box>
@@ -113,7 +113,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-office-cleaning.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="lazy"
                     />
                     <Typography variant="body1">Office Cleaning</Typography>
                   </Box>
@@ -122,7 +122,7 @@ function Cleaning_Services() {
                   <Box className="service-image-box">
                     <img
                       src="/images/service-industrial.jpg"
-                      alt="Service Evening and Night"
+                      alt="Service Evening and Night" loading="lazy"
                     />
                     <Typography variant="body1">Business Cleaning</Typography>
                   </Box>

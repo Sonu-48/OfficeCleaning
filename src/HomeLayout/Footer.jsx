@@ -31,9 +31,6 @@ const FooterWrapper = styled("div")({
       padding: "5px 0px",
     },
   },
-  ".img-link": {
-    width: "192px",
-  },
   ".bark-review": {
     background: "rgb(33, 51, 68)",
     borderTop: "4px solid rgb(28, 44, 59)",
@@ -71,12 +68,16 @@ function Footer() {
                   London <br /> EC1V 2NX
                 </Typography>
               </Box>
-              <Link href="">
-                <Box className="review-outer">
+              <Box className="review-outer">
+                <Link
+                  href="https://www.bark.com/en/gb/company/out-of-hour-cleaning-services/QR94/"
+                  target="_blank"
+                >
                   <img
                     src="/images/cert-excellence-medium.png"
                     alt="Cert"
                     width="100%"
+                    loading="lazy"
                   />
 
                   <Box className="bark-review">
@@ -84,8 +85,8 @@ function Footer() {
                       Out of Hour Cleaning Services
                     </Typography>
                   </Box>
-                </Box>
-              </Link>
+                </Link>
+              </Box>
             </Grid>
             <Grid item lg={4} md={4} sm={6} xs={12}>
               <Typography variant="h4">Contact Us</Typography>
@@ -133,12 +134,12 @@ function Footer() {
         </Container>
       </FooterWrapper>
       {/* Back to top button */}
-      <Box sx={{ background: "#142250",padding:'0px 0px 5px' }}>
+      <Box sx={{ background: "#142250", padding: "0px 0px 5px" }}>
         <Container>
           <Box align="center">
             <Tooltip title="Back to top">
               <IconButton onClick={handleClick} sx={{ background: "#b4d56c" }}>
-                <KeyboardArrowUp style={{fontSize:'30px'}}/>
+                <KeyboardArrowUp style={{ fontSize: "30px" }} />
               </IconButton>
             </Tooltip>
           </Box>

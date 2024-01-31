@@ -3,7 +3,7 @@ import { Container, Box, Typography, Button, styled } from "@mui/material";
 import Header from "../../../HomeLayout/Header";
 import Footer from "../../../HomeLayout/Footer";
 import PageHelmet from "../../../Components/PageHelmet";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const WindowcleaningWrapper = styled("div")({
   "& a": {
@@ -42,7 +42,7 @@ function Office_Cleaning_London() {
             <Box pt={2} pb={2}>
               <img
                 src="/images/office-cleaning-london.jpg"
-                alt="Office Cleaning Banner"
+                alt="Office Cleaning Banner" width="100%" loading="lazy"
               />
             </Box>
             <Box>

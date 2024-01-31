@@ -42,7 +42,7 @@ function Daytime_Cleaning_London() {
             <Box pt={2} pb={2}>
               <img
                 src="/images/daytime-cleaning.jpg"
-                alt="Off Cleaning Banner"
+                alt="Off Cleaning Banner" width="100%" loading="lazy"
               />
             </Box>
             {/* Daytime Cleaning */}

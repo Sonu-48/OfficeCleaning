@@ -41,7 +41,7 @@ function Commercial_Cleaning() {
             <Box pt={2} pb={2}>
               <img
                 src="/images/commercial-cleaning.jpg"
-                alt="Commercial Cleaning Banner"
+                alt="Commercial Cleaning Banner" loading="lazy"
               />
             </Box>
             {/* Commercial cleaning in London */}

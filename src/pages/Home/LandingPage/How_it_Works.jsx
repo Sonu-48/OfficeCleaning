@@ -13,7 +13,6 @@ const Wrapper = styled("div")({
   ".arrow": {
     position: "absolute",
     left: "35px",
-    // bottom: "65px",
     zIndex: "22",
   },
   ".circle-outer": {
@@ -34,6 +33,11 @@ const Wrapper = styled("div")({
     alignItems: "center",
     justifyContent: "center",
   },
+  "@media screen and (max-width:600px)":{
+    ".arrow":{
+      display:'none',
+    }
+  }
 });
 
 function How_it_Works() {
@@ -51,7 +55,7 @@ function How_it_Works() {
                 </Typography>
               </Box>
               <Box className="arrow">
-                <img src="/images/step-bg.png" alt="Step" />
+                <img src="/images/step-bg.png" alt="Step" loading="lazy"/>
               </Box>
             </Box>
           </Grid>
@@ -64,7 +68,7 @@ function How_it_Works() {
                 </Typography>
               </Box>
               <Box className="arrow">
-                <img src="/images/step-bg.png" alt="Step" />
+                <img src="/images/step-bg.png" alt="Step" loading="lazy"/>
               </Box>
             </Box>
           </Grid>
@@ -77,7 +81,7 @@ function How_it_Works() {
                 </Typography>
               </Box>
               <Box className="arrow">
-                <img src="/images/step-bg.png" alt="Step" />
+                <img src="/images/step-bg.png" alt="Step" loading="lazy"/>
               </Box>
             </Box>
           </Grid>
@@ -95,7 +99,7 @@ function How_it_Works() {
                 </Typography>
               </Box>
               <Box className="arrow">
-                <img src="/images/stepend-bg.png" alt="Step" />
+                <img src="/images/stepend-bg.png" alt="Step" loading="lazy"/>
               </Box>
             </Box>
           </Grid>

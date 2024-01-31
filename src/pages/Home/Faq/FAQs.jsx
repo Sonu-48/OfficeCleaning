@@ -26,7 +26,7 @@ function FAQs() {
       <FQASection>
         <Container>
           <Box>
-            <img src="/images/banner-faq-page.jpg" alt="Faq Banner" width="100%"/>
+            <img src="/images/banner-faq-page.jpg" alt="Faq Banner" width="100%" loading="lazy"/>
           </Box>
           <Box className="faq-section">
             <Typography variant="h2">FAQ’s Questions & Answers</Typography>

@@ -39,7 +39,7 @@ function Carpet_Cleaning() {
         <CarpetWrapper>
           <Container>
             <Box pt={2} pb={2}>
-              <img src="/images/carpet-banner.jpg" alt="Carpet Banner" />
+              <img src="/images/carpet-banner.jpg" alt="Carpet Banner" width="100%" loading="lazy"/>
             </Box>
             {/* Professional Carpet Cleaning Services London section */}
             <Box>

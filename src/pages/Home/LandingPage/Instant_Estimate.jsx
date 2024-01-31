@@ -3,6 +3,10 @@ import { Container, Box, Typography, styled, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled("div")({
+  "& img":{
+    width:'100%',
+    height:'100%',
+  },
   ".circle-outer-wrapper": {
     display: "flex",
     alignItems: "center",
@@ -87,13 +91,13 @@ function Instant_Estimate() {
                   <Typography variant="body2">Instant Estimate</Typography>
                 </Box>
                 <Box className="circle-img">
-                  <img src="/images/img1.jpg" alt="" />
+                  <img src="/images/img1.jpg" alt="Instant Estimate" loading="lazy"/>
                 </Box>
                 <Typography variant="body1">
                   Find out what your initial cleaning costs in seconds
                 </Typography>
                 <Box className="arrow">
-                  <img src="/images/arrow-img.png" alt="Arrow" />
+                  <img src="/images/arrow-img.png" alt="Arrow" loading="lazy"/>
                 </Box>
               </Box>
               <Box className="circle-wrapper">
@@ -115,7 +119,7 @@ function Instant_Estimate() {
                   <Typography variant="body2">Quick & Easy Process</Typography>
                 </Box>
                 <Box className="circle-img">
-                  <img src="/images/img3.jpg" alt="" />
+                  <img src="/images/img3.jpg" alt="Quikc and Easy Process" loading="lazy" width="100%"/>
                 </Box>
                 <Typography variant="body1">
                   Cleaners app that will act as your management dashboard
@@ -123,7 +127,7 @@ function Instant_Estimate() {
               </Box>
             </Box>
           </Grid>
-          <Grid item lg={2} xs={12} sx={{paddingLeft:'0px!important'}}>
+          <Grid item lg={2} xs={12} sx={{paddingLeft:{lg:'0px!important',md:'0px',sm:'24px',xs:'24px'}}}>
             <Box className="link-banner">
               <Link to="/get-your-quote-now">Click Here to Get Your Instant Quote Estimate</Link>
             </Box>

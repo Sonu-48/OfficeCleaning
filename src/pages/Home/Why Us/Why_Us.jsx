@@ -108,12 +108,12 @@ function Why_Us() {
       <WhyUsSection>
         <Container>
           <Box className="mobile-banner">
-            <img src="/images/blue-back-min.jpg" alt="Blue Banner" />
+            <img src="/images/blue-back-min.jpg" alt="Blue Banner" loading="lazy"/>
             <Typography variant="body1">What makes</Typography>
             <Typography variant="body1">Out of Hour Cleaning</Typography>
             <Typography variant="body1">Services different?</Typography>
             <Box className="mobile-img">
-              <img src="/images/mob_01-min.png" alt="Mobile" />
+              <img src="/images/mob_01-min.png" alt="Mobile" loading="lazy" />
             </Box>
           </Box>
           <Box className="communication-tool">

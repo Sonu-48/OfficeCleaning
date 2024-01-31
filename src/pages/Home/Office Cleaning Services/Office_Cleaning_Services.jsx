@@ -99,7 +99,7 @@ function Office_Cleaning_Services() {
                   <img
                     src="/images/office-cleaning-img.jpg"
                     alt="Office Cleaning Banner"
-                    width="100%"
+                    width="100%" loading="lazy"
                   />
                 </Box>
               </Grid>

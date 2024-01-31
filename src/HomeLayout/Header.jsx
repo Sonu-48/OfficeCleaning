@@ -105,7 +105,7 @@ function Header() {
               sx={{ paddingLeft: "0px", display: "flex", alignItems: "center",justifyContent:{lg:'start',md:'start',sm:'center',xs:'center'} }}
             >
               <Link to="/" component={ReactRouterLink}>
-                <img src="/images/logo.png" alt="Office Cleaning" />
+                <img src="/images/logo.png" alt="Office Cleaning" width="100%" height="100%" loading="lazy"/>
               </Link>
             </Grid>
             <Grid
@@ -142,13 +142,13 @@ function Header() {
                 <Box className="separator">/</Box>
                 <Box className="social-inner-box">
                   <Link href="https://www.facebook.com/outofhour" target="_blank">
-                    <img src="/images/facebook-icon.png" alt="Facebook" />
+                    <img src="/images/facebook-icon.png" alt="Facebook" loading="lazy" />
                   </Link>
                   <Link href="https://twitter.com/OutofHour" target="_blank">
-                    <img src="/images/twitter-icon.png" alt="Twitter" />
+                    <img src="/images/twitter-icon.png" alt="Twitter" loading="lazy"/>
                   </Link>
                   <Link href="https://www.youtube.com/watch?v=DB0-XEOFdU0" target="_blank">
-                    <img src="/images/youtube-icon.png" alt="YouTube" />
+                    <img src="/images/youtube-icon.png" alt="YouTube" loading="lazy"/>
                   </Link>
                 </Box>
               </Box>

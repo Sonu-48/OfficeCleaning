@@ -3,11 +3,14 @@ import { Container, Box, Typography, styled, Link } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Link } from "react-router-dom";
 
 const ReviewSection = styled("div")({
   marginTop: "30px",
   marginBottom: "40px",
+  "& img":{
+    width:'100%',
+    height:'100%',
+  },
   "& a": {
     fontWeight: "600",
     textDecoration: "none",
@@ -66,7 +69,7 @@ function Reviews() {
             <Container>
               <Box className="quote-outer">
                 <Box>
-                  <img src="/images/quotes.png" alt="Quotes" />
+                  <img src="/images/quotes.png" alt="Quotes" loading="lazy"/>
                 </Box>
                 <Box>
                   <Typography variant="h3" color="#fff">
@@ -94,7 +97,7 @@ function Reviews() {
             <Container>
               <Box className="quote-outer">
                 <Box>
-                  <img src="/images/quotes.png" alt="Quotes" />
+                  <img src="/images/quotes.png" alt="Quotes" loading="lazy"/>
                 </Box>
                 <Box>
                   <Typography variant="h3">
@@ -121,7 +124,7 @@ function Reviews() {
             <Container>
               <Box className="quote-outer">
                 <Box>
-                  <img src="/images/quotes.png" alt="Quotes" />
+                  <img src="/images/quotes.png" alt="Quotes" loading="lazy"/>
                 </Box>
                 <Box>
                   <Typography variant="h3">

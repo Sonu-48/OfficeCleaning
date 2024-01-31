@@ -41,7 +41,7 @@ const ContactWrapper = styled("div")({
 const ContactSchema = Yup.object().shape({
     Name: Yup.string()
       .min(2, "Too Short!")
-      .max(10, "Too Long!")
+      .max(20, "Too Long!")
       .matches(/^[a-zA-Z]+$/, "Invalid name. Only letters are allowed.")
       .required("Name is required."),
     email: Yup.string()
@@ -51,14 +51,16 @@ const ContactSchema = Yup.object().shape({
       .matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, "Invalid telephone number")
       .required("Telephone number is required."),
     message: Yup.string()
-      .min(20, "Too Short!")
+      .min(10, "Too Short!")
       .max(100, "Too Long!")
       .required("Message is required."),
   });
   
 
 function Contact_Us() {
-  const handleSubmit = () => {};
+  const handleSubmit = (values,{resetForm}) => {
+    resetForm();
+  };
   return (
     <>
       <PageHelmet title="Contact Us - Out Of Hour">
@@ -66,7 +68,7 @@ function Contact_Us() {
       <ContactWrapper>
         <Container>
           <Box>
-            <img src="/images/contact-us-banner.jpg" alt="ContactUs Banner" width="100%"/>
+            <img src="/images/contact-us-banner.jpg" alt="ContactUs Banner" width="100%" loading="lazy"/>
           </Box>
           <Grid container spacing={3} pt={3} pb={3}>
             <Grid item lg={6} md={6} sm={12} xs={12}>

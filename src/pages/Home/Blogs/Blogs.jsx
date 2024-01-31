@@ -20,7 +20,8 @@ const BlogWrapper = styled("div")({
   },
   "@media screen and (max-width:600px)":{
     ".blog-inner-wrapper":{
-        flexWrap:'wrap'
+        flexWrap:'wrap',
+        justifyContent:'center',
     }
   }
 });
@@ -33,7 +34,7 @@ function Blogs() {
         <BlogWrapper>
           <Container>
             <Box>
-              <img src="/images/blog-page-banner.jpg" alt="Blog Banner" width="100%"/>
+              <img src="/images/blog-page-banner.jpg" alt="Blog Banner" width="100%" loading="lazy"/>
             </Box>
             {/* UK Theatres Set To Reopen With Enhanced Cleaning Measures */}
             <Box className="blog-outer">
@@ -41,7 +42,7 @@ function Blogs() {
                 UK Theatres Set To Reopen With Enhanced Cleaning Measures
               </Typography>
               <Box className="blog-inner-wrapper">
-                <img src="/images/blog-img1.jpg" alt="Blog" />
+                <img src="/images/blog-img1.jpg" alt="Blog" loading="lazy"/>
 
                 <Typography variant="body1">
                   As Prime Minister Boris Johnson has confirmed that most of the
@@ -66,7 +67,7 @@ function Blogs() {
                 Advert Ban Reflects Gender Reality Of Cleaning
               </Typography>
               <Box className="blog-inner-wrapper">
-                <img src="/images/blog-img2.jpg" alt="Blog" />
+                <img src="/images/blog-img2.jpg" alt="Blog" loading="lazy"/>
 
                 <Typography variant="body1">
                   In an age when gender-based discrimination and stereotypes are
@@ -91,7 +92,7 @@ function Blogs() {
                 4 Tips For Hiring Commercial Cleaners
               </Typography>
               <Box className="blog-inner-wrapper">
-                <img src="/images/blog-img3.jpg" alt="Blog" />
+                <img src="/images/blog-img3.jpg" alt="Blog" loading="lazy"/>
 
                 <Typography variant="body1">
                   In an age when gender-based discrimination and stereotypes are
@@ -116,7 +117,7 @@ function Blogs() {
                 Shoppers Urged To Do Their Bit As Shops Reopen
               </Typography>
               <Box className="blog-inner-wrapper">
-                <img src="/images/blog-img4.jpg" alt="Blog" />
+                <img src="/images/blog-img4.jpg" alt="Blog" loading="lazy"/>
 
                 <Typography variant="body1">
                   Non-essential retail businesses were allowed to reopen as of
@@ -141,7 +142,7 @@ function Blogs() {
                 What Does A Commercial Cleaning Company Do?
               </Typography>
               <Box className="blog-inner-wrapper">
-                <img src="/images/blog-img5.jpg" alt="Blog" />
+                <img src="/images/blog-img5.jpg" alt="Blog" loading="lazy"/>
 
                 <Typography variant="body1">
                   Commercial cleaning companies exist to provide businesses with

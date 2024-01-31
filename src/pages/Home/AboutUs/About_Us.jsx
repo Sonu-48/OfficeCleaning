@@ -57,7 +57,7 @@ function About_Us() {
       <AboutSection>
         <Container>
           <Box>
-            <img src="/images/about-us-banner.jpg" alt="Banner" width="100%"/>
+            <img src="/images/about-us-banner.jpg" alt="Banner" width="100%" loading="lazy"/>
           </Box>
           <Grid container spacing={4} mt={2} mb={1}>
             <Grid item lg={4} md={4} sm={6} xs={12}>
@@ -67,7 +67,7 @@ function About_Us() {
                 </Typography>
                 <Box className="sidebox-icon">
                   <Box>
-                    <img src="/images/checkmark-internal.png" alt="Checkmark" />
+                    <img src="/images/checkmark-internal.png" alt="Checkmark"  loading="lazy"/>
                   </Box>
                   <Box>
                     <Typography variant="h3">REDUCED COSTS</Typography>
@@ -78,7 +78,7 @@ function About_Us() {
                 </Box>
                 <Box className="sidebox-icon">
                   <Box>
-                    <img src="/images/checkmark-internal.png" alt="Checkmark" />
+                    <img src="/images/checkmark-internal.png" alt="Checkmark" loading="lazy"/>
                   </Box>
                   <Box>
                     <Typography variant="h3">TIME SAVED</Typography>
@@ -89,7 +89,7 @@ function About_Us() {
                 </Box>
                 <Box className="sidebox-icon">
                   <Box>
-                    <img src="/images/checkmark-internal.png" alt="Checkmark" />
+                    <img src="/images/checkmark-internal.png" alt="Checkmark"  loading="lazy"/>
                   </Box>
                   <Box>
                     <Typography variant="h3">A BETTER FIT</Typography>
@@ -100,7 +100,7 @@ function About_Us() {
                 </Box>
                 <Box className="sidebox-icon">
                   <Box>
-                    <img src="/images/checkmark-internal.png" alt="Checkmark" />
+                    <img src="/images/checkmark-internal.png" alt="Checkmark"  loading="lazy"/>
                   </Box>
                   <Box>
                     <Typography variant="h3">TRUSTED SERVICES</Typography>
@@ -112,7 +112,7 @@ function About_Us() {
                 </Box>
                 <Box className="sidebox-icon">
                   <Box>
-                    <img src="/images/checkmark-internal.png" alt="Checkmark" />
+                    <img src="/images/checkmark-internal.png" alt="Checkmark"  loading="lazy"/>
                   </Box>
                   <Box>
                     <Typography variant="h3">FREE SERVICE</Typography>
@@ -124,7 +124,7 @@ function About_Us() {
                 </Box>
               </Box>
               <Box className="sidebox">
-                <img src="/images/quality-assurance.png" alt="Quality" />
+                <img src="/images/quality-assurance.png" alt="Quality"  loading="lazy" />
               </Box>
               <Box className="sidebox">
                 <Typography variant="body1" align="center" sx={{fontSize:'20px'}}>

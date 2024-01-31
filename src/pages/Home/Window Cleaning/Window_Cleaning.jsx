@@ -43,7 +43,7 @@ function Window_Cleaning() {
             <Box pt={2} pb={2}>
               <img
                 src="/images/window-cleaning.jpg"
-                alt="Window Cleaning Banner"
+                alt="Window Cleaning Banner" width="100%" loading="lazy"
               />
             </Box>
             {/*Window Cleaning */}

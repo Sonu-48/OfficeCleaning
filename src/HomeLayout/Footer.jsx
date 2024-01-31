@@ -1,9 +1,20 @@
-import { Box, Container, Grid, Typography, styled, Link, Button } from "@mui/material";
+import { KeyboardArrowUp } from "@mui/icons-material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  styled,
+  Link,
+  Button,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
 import React from "react";
 
 const FooterWrapper = styled("div")({
   background: "#1b2a6b",
-  padding: "3rem 0 2rem",
+  padding: "3rem 0 0rem ",
   "& a": {
     textDecoration: "none",
   },
@@ -34,12 +45,18 @@ const FooterWrapper = styled("div")({
     border: "4px solid rgb(28, 44, 59)",
     marginTop: "20px",
   },
-  ".address-box":{
-    maxWidth:'300px'
-  }
+  ".address-box": {
+    maxWidth: "300px",
+  },
 });
 
 function Footer() {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <Box>
       <FooterWrapper>
@@ -49,9 +66,8 @@ function Footer() {
               <Typography variant="h4">Find Us</Typography>
               <Box className="footer-link address-box">
                 <Typography variant="body1">
-                  Find Us Out of Hour Cleaning Services 
-                  152 - 160 City Road,<br />
-                 
+                  Find Us Out of Hour Cleaning Services 152 - 160 City Road,
+                  <br />
                   London <br /> EC1V 2NX
                 </Typography>
               </Box>
@@ -86,26 +102,48 @@ function Footer() {
                 </Link>
               </Box>
               <Box mt={3} mb={2}>
-                <Button variant="contained" color="primary" component={Link} href="https://www.youtube.com/watch?v=CnJINUEeS3U" target="_blank">Watch 1 min video tour</Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  component={Link}
+                  href="https://www.youtube.com/watch?v=CnJINUEeS3U"
+                  target="_blank"
+                >
+                  Watch 1 min video tour
+                </Button>
               </Box>
-              <Link href="https://www.trustpilot.com/review/outofhour.co.uk?utm_medium=trustbox&utm_source=MicroReviewCount" target='_blank'>See our reviews * on trustpilot</Link>
+              <Link
+                href="https://www.trustpilot.com/review/outofhour.co.uk?utm_medium=trustbox&utm_source=MicroReviewCount"
+                target="_blank"
+              >
+                See our reviews * on trustpilot
+              </Link>
             </Grid>
             <Grid item lg={3} md={4} sm={6} xs={12}>
-              <Link href="https://twitter.com/OutofHour">
+              <Link href="https://twitter.com/OutofHour" target="_blank">
                 Tweets by @OutofHour
               </Link>
             </Grid>
           </Grid>
           <Box pt={2}>
-            <Typography variant="body1" color="#fff">© 2022 Copyright Out of Hour | Sitemap | Articles</Typography>
+            <Typography variant="body1" color="#fff">
+              © 2022 Copyright Out of Hour | Sitemap | Articles
+            </Typography>
           </Box>
         </Container>
       </FooterWrapper>
-      {/* <CopyrightSection>
-        <Typography variant="h6">
-          Copyright © 2023 TradePlumbing . All Rights Reserved.
-        </Typography>
-      </CopyrightSection> */}
+      {/* Back to top button */}
+      <Box sx={{ background: "#142250",padding:'0px 0px 5px' }}>
+        <Container>
+          <Box align="center">
+            <Tooltip title="Back to top">
+              <IconButton onClick={handleClick} sx={{ background: "#b4d56c" }}>
+                <KeyboardArrowUp style={{fontSize:'30px'}}/>
+              </IconButton>
+            </Tooltip>
+          </Box>
+        </Container>
+      </Box>
     </Box>
   );
 }

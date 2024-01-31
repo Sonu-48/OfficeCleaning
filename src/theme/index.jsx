@@ -171,6 +171,7 @@ const theme = createTheme({
         root:{
           color:'#767676',
           fontSize:'15px',
+          textAlign:'start',
         }
       }
     },
